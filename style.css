@@ -27,8 +27,8 @@ header h1{
 
 main{
     display: flex;
-    gap: 40px;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
 
     margin: 40px 20px;
 }
@@ -42,21 +42,16 @@ main section{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid green;
     width: 50vw;
     padding: 40px;
 }
 
-main aside{
-    width: 50vw;
-    border: 1px solid blue;
-}
-
 div.card{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     overflow: auto;
-    border: 1px solid red;
-    height: 50vh;
+    height: 80vh;
     padding: 15px;
     box-shadow: -12px 10px 5.8px 0px rgba(0, 0, 0, 0.25);
 }
@@ -88,4 +83,56 @@ div.card div.card-container--value{
     justify-content: space-between;
 }
 
+/*Estilização do Formulário*/
+aside{
+    padding: 40px;
+    width: 20vw;
+}
 
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid rgba(3, 49, 140, 1);
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+}
+
+form input::placeholder{
+    color: rgba(3, 49, 140, 1);
+}
+
+form input:focus-visible{
+    outline: none;
+}
+
+form button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(3, 49, 140, 1);
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    color: white;
+    width: 100%;
+}
+
+#guardar{
+    background-color: rgba(3, 49, 140, 1);
+}
+
+#limpar{
+    color: rgba(3, 49, 140, 1);
+    background-color: #fff;
+}
+
+form div.buttons{
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+}
