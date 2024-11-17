@@ -42,7 +42,7 @@ main section{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50vw;
+    width: 800px;
     padding: 40px;
 }
 
@@ -59,7 +59,9 @@ div.card{
 div.card div.card-container--info{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    height: 258px;
+    width: 196px;
     border: 3px solid black;
     border-radius: 10px;
     background: rgba(93, 4, 217, 1);
@@ -70,8 +72,13 @@ div.card div.card-container--info{
     box-shadow: -5px 6px 3.3px 0px rgba(0, 0, 0, 0.25);
 }
 
+div.card div.card-container--info p{
+    font-family: 'IBM Plex Mono';
+}
+
 div.card img.card-container--image{
     align-self: center;
+    height: 174px;
     width: 176px;
     border: 3px solid black;
     border-radius: 10px;
@@ -140,12 +147,19 @@ form div.buttons{
 /*Estilização do Rodapé*/
 footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     height: 232px;
     background-color: rgba(83, 0, 200, 1);
     box-shadow: 0px -7px 0px 0px rgba(0, 0, 0, 0.24);
     color: white;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
 }
 
 footer h1{
@@ -154,4 +168,35 @@ footer h1{
 
 footer img{
     width: 138px;
+    margin: 10px;
+}
+
+footer p{
+    font-size: 16px;
+    font-family: 'IBM Plex Mono';
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    aside{
+        width: 60vw;
+    }
+
+    main section{
+        width: 80vw;
+    }
+
+    div.card{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        height: 360px;
+        padding: 0px;
+        box-shadow: none;
+    }
 }
