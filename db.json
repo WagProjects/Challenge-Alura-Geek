@@ -1,0 +1,22 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "StormTrooper",
+      "preco": 60,
+      "imagem": "Imagens/stormtroper.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Game Boy Classic",
+      "preco": 60,
+      "imagem": "Imagens/gameboy.png"
+    },
+    {
+      "nome": "Pc Gamer",
+      "preco": "9999",
+      "imagem": "https://cdn.awsli.com.br/600x450/1599/1599357/produto/60403595/155dafca6a.jpg",
+      "id": 3
+    }
+  ]
+}
