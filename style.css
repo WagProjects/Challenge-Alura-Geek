@@ -29,7 +29,6 @@ main{
     display: flex;
     gap: 20px;
     justify-content: center;
-    height: 100vh;
     margin: 40px 20px;
 }
 
@@ -53,6 +52,16 @@ div.card-container {
     height: 80vh;
     padding: 15px;
     box-shadow: -12px 10px 5.8px 0px rgba(0, 0, 0, 0.25);
+}
+
+div.card-container h3{
+    position: relative;
+    font-family: 'IBM Plex Mono';
+    align-self: center;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 div.card-container div.card-container--info{
